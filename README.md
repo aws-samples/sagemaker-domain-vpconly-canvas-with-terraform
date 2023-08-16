@@ -83,9 +83,17 @@ A SageMaker user can grant these permissions with an IAM role (referred to as an
 - You must establish how the AWS CLI authenticates with AWS when you deploy this solution. To configure credentials for programmatic access for the AWS CLI, choose one of the options from [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-authentication.html)
 
 ### Clone the Code Repo and Download the Auto-shutdown Extension
-- Clone the repo: git clone https://github.com/aws-samples/sagemaker-domain-vpconly-canvas-with-terraform.git
-- Download the auto-shutdown extension from https://github.com/aws-samples/sagemaker-studio-auto-shutdown-extension/raw/main/sagemaker_studio_autoshutdown-0.1.5.tar.gz
-- Place the downloaded sagemaker_studio_autoshutdown-0.1.5.tar.gz file in assets/auto_shutdown_template folder. Your file structure should look like:
+- Clone the repo and navigate to the sagemaker-domain-vpconly-canvas-with-terraform folder: 
+```
+git clone https://github.com/aws-samples/sagemaker-domain-vpconly-canvas-with-terraform.git
+
+cd sagemaker-domain-vpconly-canvas-with-terraform
+```
+- Download the auto-shutdown extension and place it in assets/auto_shutdown_template folder:
+```
+wget https://github.com/aws-samples/sagemaker-studio-auto-shutdown-extension/raw/main/sagemaker_studio_autoshutdown-0.1.5.tar.gz -P assets/auto_shutdown_template
+```
+- Your file structure should look like:
 ```
 .
 ├── LICENSE
